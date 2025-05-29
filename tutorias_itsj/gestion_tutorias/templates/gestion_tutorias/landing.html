@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido al Sistema de Tutorías ITSJ</h1>
+        <p class="lead">Plataforma para la gestión eficiente de tutorías entre estudiantes y tutores.</p>
+        <hr class="my-4">
+        <p>Regístrate o inicia sesión para comenzar a usar el sistema.</p>
+        <div class="d-flex gap-3">
+            <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Iniciar Sesión</a>
+            <a class="btn btn-success btn-lg" href="{% url 'registro' %}" role="button">Registrarse</a>
+        </div>
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Para Estudiantes</h5>
+                    <p class="card-text">Solicita tutorías, comunícate con tus tutores y accede a recursos de aprendizaje.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Para Tutores</h5>
+                    <p class="card-text">Gestiona tus horarios, atiende solicitudes y comparte materiales con tus estudiantes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Soporte Técnico</h5>
+                    <p class="card-text">¿Problemas con el sistema? Contáctanos para recibir asistencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
